@@ -4,7 +4,7 @@ const schema = require('./schema');
 
 const app = express();
 
-app.use('/grapql', graphqlHTTP({
+app.use('/graphql', graphqlHTTP({
     schema,
     graphiql: true
 }));
