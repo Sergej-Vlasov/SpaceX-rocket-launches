@@ -24,7 +24,7 @@ const Launches = () => {
                 {
                     ({ loading, error, data }) => {
                         if(loading) return <h4>Loading...</h4>
-                        if(error) console.log(error);
+                        if(error) return <h4>Something went wrong... (exactly like with first SpaceX launches)</h4>
 
                         return (
                             <Fragment>

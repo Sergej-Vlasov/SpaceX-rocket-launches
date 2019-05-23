@@ -32,7 +32,7 @@ const Launch = (props) => {
                 {
                     ({ loading, error, data }) => {
                         if(loading) return <h4>Loading...</h4>;
-                        if(error) console.log(error);
+                        if(error) return <h4>Something went wrong... (exactly like with first SpaceX launches)</h4>
 
                         const { flight_number, mission_name, launch_year, launch_success, launch_date_utc, rocket: { 
                             rocket_id, rocket_name, rocket_type }} = data.launch;
